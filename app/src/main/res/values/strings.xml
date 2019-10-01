@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">L-S4M2</string>
+
+    <!--Main Screen-->
+    <string name="title_main">Main</string>
+    <string name="basic_android_networking">Basic Android Networking</string>
+
+    <!--HttpUrlConnection Screen-->
+    <string name="http_url_connection">1. Http Url Connection</string>
+    <string name="fetch_random_advice">Fetch Random Advice</string>
+    <string name="network_disconnected">Can\'t connect to the Internet. Please try again.</string>
+    <string name="invalid_json">Invalid JSON</string>
+
+    <!--Retrofit Screen-->
+    <string name="retrofit">2. Retrofit Example</string>
+    <string name="fetch_random_advice_retrofit">Fetch Random Advice - Retrofit</string>
+    <string name="fetch_random_advice_okhttp">Fetch Random Advice - OkHttp</string>
+
+</resources>
