@@ -42,6 +42,8 @@ class AdviceRetriever {
 //        logger.level = HttpLoggingInterceptor.Level.HEADERS
 //        logger.level = HttpLoggingInterceptor.Level.BODY
 
+        RetrofitActivity.adviceTextRetrofitObj
+
         Log.d(TAG, "logger.level=${logger.level}")
 
         val ohHttpClient = OkHttpClient.Builder()
