@@ -1,6 +1,7 @@
 package com.lambdaschool.basicandroidnetworking.retrofit
 
 import android.util.Log
+import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.google.gson.GsonBuilder
 import com.lambdaschool.basicandroidnetworking.model.AdviceMsg
 import okhttp3.OkHttpClient
@@ -44,6 +45,7 @@ class AdviceRetriever {
         Log.d(TAG, "logger.level=${logger.level}")
 
         val ohHttpClient = OkHttpClient.Builder()
+            .addNetworkInterceptor(StethoInterceptor()) // Stetho
             .addInterceptor(logger)
             .retryOnConnectionFailure(false)
             .readTimeout(10, TimeUnit.SECONDS)
